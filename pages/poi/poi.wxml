@@ -1,0 +1,48 @@
+<view class="section">
+  <input data-city="{{city}}" data-longitude="{{longitude}}" data-latitude="{{latitude}}" bindtouchstart="bindInput" placeholder="搜索"/>
+  <button bindtap="confirm">确定</button>
+</view>
+<view class="map_container">
+  <map class="map" id="map" longitude="{{longitude}}" latitude="{{latitude}}" scale="16" show-location="true" markers="{{markers}}" polyline="{{polyline}}" bindmarkertap="makertap"></map>
+</view>
+
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>
+<!-- <view class="map_text">
+  <text class="h1">{{textData.name}}</text>
+  <text>{{textData.desc}}</text>
+</view> -->
+
+
+  <block wx:if="{{(!isParkOrWc)||(!isdetail)}}">
+    <view class="map_text">
+        <text class="h1 init_map_text">{{textData.name}}</text>
+        <text class='init_map_text'>{{textData.desc}}</text> 
+    </view>
+  </block>
+
+ <block wx:else>
+
+  <view class='map_text_wc_detail'>
+   <view class="block_detail_text_3" wx:for="{{block_detail_text}}"  data-index="{{index}}" bindtap="mydetail">
+    <block wx:if="{{index%2==0}}">
+       <view class='block block_white'>
+           <text class='button_text parkName'>{{item.parkName}}</text>
+           <text class='start_end_Time button_text'>{{item.startTime}}-{{item.endTime}}</text>
+           <text class='forWho button_text'>开放对象：{{item.forwho}}</text>
+           <text class='detail_button'>详情</text>
+        </view>
+    </block>
+    <block wx:else>
+      <view class='block block_grey'>
+           <text class='button_text parkName'>{{item.parkName}}</text>
+           <text class='start_end_Time button_text'>{{item.startTime}}-{{item.endTime}}</text>
+           <text class='forWho button_text'>开放对象：{{item.forwho}}</text>
+           <text class='detail_button'>详情</text>
+      </view>
+    </block>
+    
+  </view>
+</view>
+  </block>

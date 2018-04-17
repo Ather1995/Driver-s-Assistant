@@ -1,0 +1,62 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/my/my",
+    "pages/route/route",
+    "pages/login/login",
+    "pages/weather/weather",
+    "pages/inputtips/input",
+    "pages/poi/poi",
+    "pages/verity/verity",
+    "pages/day_client_num/day_client_num",
+    "pages/day_addgas_num/day_addgas_num",
+    "pages/day_active_area/day_active_area",
+    "pages/day_long_trip_num/day_long_trip_num",
+    "pages/bestroute/bestroute",
+    "pages/mon_active_area/mon_active_area",
+    "pages/mon_addgas_num/mon_addgas_num",
+    "pages/mon_client_num/mon_client_num",
+    "pages/mon_long_trip_num/mon_long_trip_num",
+    "pages/findRes/findRes",
+    "pages/wc_detail_pic/wc_detail_pic"
+  ],
+  "tabBar": {
+    "color": "#dbdbdb",
+    "selectedColor": "#f24f3b",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "resource/images/route1.png",
+        "selectedIconPath": "resource/images/route2.png",
+        "text": "路线"
+      },
+      {
+        "pagePath": "pages/route/route",
+        "iconPath": "resource/images/nearby1.png",
+        "selectedIconPath": "resource/images/nearby2.png",
+        "text": "附近"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "iconPath": "resource/images/my1.png",
+        "selectedIconPath": "resource/images/my2.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f24f3b",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "white"
+  },
+  "networkTimeout": {
+    "request": 600000,
+    "connectSocket": 10000,
+    "uploadFile": 10000,
+    "downloadFile": 10000
+  }
+}

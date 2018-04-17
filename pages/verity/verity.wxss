@@ -1,0 +1,49 @@
+.back_img{  
+   background: url(http://139.199.85.13:8080/Images/BackGround.jpg) no-repeat;   
+  /* background-color: white; */
+  background-size:cover;  
+  /* -webkit-filter: blur(4px); // Chrome, Opera   
+  -moz-filter: blur(4px);  
+  -ms-filter: blur(4px);      
+  filter: blur(4px);    */
+  z-index:0;  
+  position:relative;  
+}  
+.avatar{
+  position:absolute;
+}
+.login_info{  
+  z-index: 999;  
+  position:absolute;  
+}  
+.login_form{  
+  border-radius:15px;  
+  margin-left:10%;   
+}  
+.weui-cell{
+  border-radius:20px; 
+  background-color:rgba(200,200,200,0.2);
+  display: -webkit-box;
+  margin:10px 8px;
+  padding-top: 8px;
+  height:35px;
+}
+/* .weui-cell__hd{
+width: 5em;
+padding-top: 2px;
+} */
+.weui-cell__bd{
+-webkit-box-flex: 1;
+padding-left:10px;
+
+}
+.weui-btn-area{
+  padding-top:20px;
+}
+
+.weui-btn{
+  background-color:#f24f3b;
+  width: 70%;
+  border-radius: 20px;
+  color:white;
+}

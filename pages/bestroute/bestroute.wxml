@@ -1,0 +1,32 @@
+<view class="myinput">
+  <view class="leftinput">
+    <view class="begin">
+    <image src="../../resource/images/search.png"></image>
+    <input 
+    data-city="{{city}}"
+    data-longitude="{{longitude}}"
+    data-latitude="{{latitude}}"
+      bindfocus="bindfocus"
+    placeholder="我的位置"/>
+  </view>
+  <view class="end">
+    <image src="../../resource/images/search.png"></image>
+    <input 
+    data-city="{{city}}"
+    data-longitude="{{longitude}}"
+    data-latitude="{{latitude}}"
+      bindfocus="bindfocus"
+    placeholder="输入终点"/>
+  </view>
+  </view>
+  <image src="../../resource/images/down_arrow.png"></image>
+</view>
+<view class="map_box">
+  <map id="navi_map" longitude="121.406832" latitude="31.217372" scale="16" markers="{{markers}}" polyline="{{polyline}}"></map>
+</view>
+
+<view class="text_box">
+  <view class="text">{{distance}}</view>
+  <view class="text">{{cost}}</view>
+  <view class="detail_button" bindtouchstart="goDetail">详情</view>
+</view>

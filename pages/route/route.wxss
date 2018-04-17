@@ -1,0 +1,64 @@
+/* route.wxss */
+page{
+  background-color: #f6f8fa;
+}
+.nearby{
+  display: flex;
+  height: 180rpx;
+  margin-top: 20rpx;
+  background: #fff;
+  /* box-shadow:#9a9797 10px 0px 10px; */
+padding-bottom:10px;
+
+}
+
+.cell{
+  position:relative;
+margin:12px 0;
+flex:1;
+box-sizing:border-box;
+text-align:center;
+border-right:0.5px solid #dbdbdb;
+
+}
+.cell wx-image{
+  font-size: 24rpx;
+  line-height: 24rpx;
+  height: 40px;
+  width: 40px;
+}
+
+.cell wx-text{
+  margin-top: 15rpx;
+    font-size: 32rpx;
+    line-height: 32rpx;
+    display: block;
+    color:#666666;
+
+}
+
+.clearhis{
+  margin-top:20px;
+  background-color: #f24f3b;
+  color: white;
+}
+button ::after {
+  background-color: white;
+  color: #f24f3b;
+}
+.hissearch{
+/* box-shadow:#9a9797 10px 0px 10px; */
+padding-left:20px;
+
+
+}
+.histext{
+text-align:center;
+margin-top:30px;
+padding:3px;
+
+}
+
+.slide-image{
+  height:150px;
+}

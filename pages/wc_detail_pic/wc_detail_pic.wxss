@@ -1,0 +1,10 @@
+/* pages/wc_detail_pic/wc_detail_pic.wxss */
+page{
+  height: 100%;
+}
+.container {
+  padding: 50rpx 0;
+}
+.container image{
+  height: 100%;
+}

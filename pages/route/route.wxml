@@ -1,0 +1,32 @@
+<page>
+
+<swiper indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+      <image src="{{item}}" class="slide-image" style='width:{{windowWidth}}px;'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<loading hidden="{{loadingHidden}}">
+  加载中...
+</loading>
+<view class="nearby">
+    <view class="cell" wx:for="{{source1}}"  data-index="{{index}}" bindtap="mysearch" >
+            <image src="{{item.src}}"></image>
+            <text>{{item.content}}</text>
+        </view>
+</view>
+<view class="nearby">
+    <view class="cell" wx:for="{{source2}}"  data-index="{{index}}" bindtap="mysearch2" >
+            <image src="{{item.src}}"></image>
+            <text>{{item.content}}</text>
+        </view>
+</view>
+<view class="histext">搜索历史</view>
+<view class="hissearch" wx:for="{{hissearch}}"  data-index="{{index}}" bindtap="hissearch" >
+            <text>{{item.content}}</text>
+</view>
+<button class="clearhis" bindtap="clearhis">清除历史记录</button>
+</page>

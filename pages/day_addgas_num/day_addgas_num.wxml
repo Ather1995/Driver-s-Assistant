@@ -1,0 +1,28 @@
+<view class="container">
+    <canvas canvas-id="ringCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+    
+    <!--<button type="primary" bindtap="updateData" style="margin-top:30rpx">更新title</button>-->
+</view>
+<view class="block">
+<view class="left"></view>
+<view class="right">
+  <view class="color">
+    <view class="mycolor c1"></view>
+    <view class="text">0次：</view>
+    <view class="count">2420辆</view>
+  </view>
+<view class="color">
+    <view class="mycolor c2"></view>
+    <view class="text">1次：</view>
+    <view class="count">2794辆</view>
+  </view>
+  <view class="color">
+    <view class="mycolor c3"></view>
+    <view class="text">2次及以上：</view>
+    <view class="count">2878辆</view>
+  </view>
+ 
+</view>
+ <view class="left"></view>
+</view>
+<view class="word">今日车辆加油次数统计</view>

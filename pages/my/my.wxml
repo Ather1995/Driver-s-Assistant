@@ -1,0 +1,31 @@
+<page>
+    <view class="user-info">
+        <image class="userinfo-avatar" src="{{userInfo.avatar}}"></image>
+        <text class="userinfo-nickname">{{userInfo.nickname}}</text>
+        <text class="carid">TaxiID:{{carid}}</text>
+        <button class="certify" bindtap="bindViewTap">实名认证</button>
+    </view>
+    <view class="day_stat">
+        <view class="textday">日统计量</view>
+        <!-- <view class="bottomline"></view> -->
+        <view class="block fourimage">
+            <view class="menu_item" wx:for="{{source}}"  data-index="{{index}}" bindtap="daystatis">   
+                <image src="{{item.imgsrc}}"></image>
+                <text>{{item.content}}</text>
+            </view>           
+          </view>
+          <!-- <view class="bottomline"></view> -->
+      </view>
+
+      <view class="day_stat">
+        <view class="textday">月统计量</view>
+        <!-- <view class="bottomline"></view> -->
+        <view class="block fourimage">
+            <view class="menu_item" wx:for="{{source}}"  data-index="{{index}}" bindtap="monthstatis">   
+                <image src="{{item.imgsrc}}"></image>
+                <text>{{item.content}}</text>
+            </view>           
+          </view>
+      </view>
+      <view class="bottomline"></view>
+</page>

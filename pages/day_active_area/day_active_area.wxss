@@ -1,0 +1,10 @@
+/* day_active_area.wxss */
+page{
+  /* background-color: #eaeaea; */
+}
+.container{
+  padding:80rpx 0;
+background-color:white;
+padding-top:45px;
+padding-bottom:10px;
+}

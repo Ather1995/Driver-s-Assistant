@@ -1,0 +1,56 @@
+<view class="container">
+<view class='myrank1'>
+  <view class="user-info">
+        <image class="userinfo-avatar" src="{{userInfo.avatar}}"></image>
+        <!-- <text class="userinfo-nickname">{{userInfo.nickname}}</text> -->
+        <text class="nickcarid">TaxiID:{{carid}}</text>
+  </view>
+  <view class="myrank_text">第{{myrank}}位</view>
+</view>
+  
+<view class="line3">
+    <view class="text1 textrank">排名</view>
+    <view class="text1">车牌号</view>
+    <view class="text1">载客数</view>
+</view>
+
+  <!-- <view class="block1 no1 block">
+        <view class="ranknum text2 text3">1</view>
+        <view class="carid text2 text3">10897</view>
+        <view class="clientnum text2 text3">141</view>
+  </view>
+  <view class="block1 no2 block">
+        <view class="ranknum text2 text3">2</view>
+        <view class="carid text2 text3">10105</view>
+        <view class="clientnum text2 text3">126</view>
+  </view>
+  <view class="block1 no3 block">
+        <view class="ranknum text2 text3">3</view>
+        <view class="carid text2 text3">20714</view>
+        <view class="clientnum text2 text3">125</view>
+  </view>
+ <view class="block" wx:for="{{rank}}"  data-index="{{index}}">
+        <view class="ranknum text2">{{index+4}}</view>
+        <view class="carid text2">{{item.carid}}</view>
+        <view class="clientnum text2">{{item.clientnum}}</view>
+  </view> -->
+
+
+<view class="block_text" wx:for="{{rank}}"  data-index="{{index}}">
+    <block wx:if="{{index%2==0}}">
+       <view class='block block_white'>
+           <view class="ranknum text2">{{index+1}}</view>
+           <view class="carid text2">{{item.carid}}</view>
+           <view class="clientnum text2">{{item.clientnum}}</view>
+        </view>
+    </block>
+    <block wx:else>
+      <view class='block block_grey'>
+        <view class="ranknum text2">{{index+1}}</view>
+        <view class="carid text2">{{item.carid}}</view>
+        <view class="clientnum text2">{{item.clientnum}}</view>
+      </view>
+    </block>
+    
+  </view>
+</view>

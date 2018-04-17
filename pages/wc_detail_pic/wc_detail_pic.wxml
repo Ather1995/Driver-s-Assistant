@@ -1,0 +1,3 @@
+<view class='container'>
+    <image src="{{pic_url}}" background-size="cover"></image>
+</view>

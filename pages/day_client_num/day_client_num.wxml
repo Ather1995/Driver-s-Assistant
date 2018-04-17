@@ -1,0 +1,12 @@
+<view class="sum">
+  <view class="sumtext">合计：</view>
+  <view class="sumnum">{{day_client_num}}</view>
+</view>
+<view class="container">
+	<view class="title">
+		<view wx:if="{{!isMainChartDisplay}}" class="back-btn" bindtap="backToMainChart">返回</view>
+		{{chartTitle}}
+	</view>
+    <canvas canvas-id="columnCanvas" class="canvas" bindtouchstart="touchHandler"></canvas>
+    <view class="tips" style="text-align:center">提示：点击数据每一项查看详情</view>
+</view>

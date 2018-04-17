@@ -1,0 +1,31 @@
+ <view class="search">
+    <image src="../../resource/images/search.png"></image>
+    <input 
+    data-city="{{city}}"
+    data-longitude="{{longitude}}"
+    data-latitude="{{latitude}}"
+      bindfocus="bindfocus"
+    placeholder="搜索"/>
+  </view> 
+
+<view class="map_container">
+  <map class="map" id="map" 
+  longitude="{{longitude}}" 
+  latitude="{{latitude}}" 
+  scale="{{scale}}" 
+  show-location="true" 
+   controls="{{controls}}"
+   bindregionchange="regionchange" 
+   circles="{{circles}}"
+   polyline="{{polyline}}"
+   bindmarkertap="makertap"
+   bindcontroltap="controltap"
+   >
+   </map>
+</view>
+
+
+<view class="map_text">
+    <text class="h1">{{textData.name}}</text>
+    <text>{{textData.desc}}</text> 
+</view>

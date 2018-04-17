@@ -1,0 +1,45 @@
+<!--  
+变量说明：  
+windowHeight ：设备的窗口的高度  
+windowWidth ： 设备的窗口的宽度  
+idcard ： 身份证  
+realname：真实姓名
+carid ：车号  
+password:密码
+subPassword ：确认密码  
+-->
+<view class="page__bd">  
+  <view style="height: {{windowHeight}}px; width: {{windowWidth}}px;" class="back_img">  
+  </view>  
+  <view calss="avatar" style="position:absolute;top:{{windowHeight * 0.17}}px;">  
+    <image src="{{userInfo.avatar}}" style="width: {{windowWidth * 0.3}}px;height:{{windowWidth * 0.3}}px; margin-left:{{windowWidth * 0.5 - 45}}px;border-radius:{{windowWidth * 0.2}}px;"></image>  
+  </view>  
+
+  <form bindsubmit="formSubmit" bindreset="formReset">  
+    <view class="login_info" style="top:{{windowHeight * 0.4}}px;width: {{windowWidth * 0.90}}px;">  
+      <view class="weui-cells weui-cells_after-title login_form">  
+        <view class="weui-cell weui-cell_input">  
+          
+          <view class="weui-cell__bd">  
+            <input class="weui-input" placeholder="请输入身份证" type="text" maxlength="20" value="{{idcard}}" focus="true" name="idcard"/>  
+          </view>  
+        </view>  
+        <view class="weui-cell weui-cell_input">  
+            
+          <view class="weui-cell__bd">  
+            <input class="weui-input" placeholder="请输入真实姓名" type="text" maxlength="10" value="{{realname}}" name="realname"/>  
+          </view>  
+        </view>
+        <view class="weui-cell weui-cell_input">  
+            
+          <view class="weui-cell__bd">  
+            <input class="weui-input" placeholder="请输入车牌号" type="text" maxlength="10" value="{{carid}}" name="carid"/>  
+          </view>  
+        </view>   
+        <view class="weui-btn-area">  
+          <button class="weui-btn" formType="submit">认证</button>  
+        </view>  
+      </view>  
+    </view>  
+  </form>  
+</view>  

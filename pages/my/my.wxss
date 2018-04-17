@@ -1,0 +1,139 @@
+page{
+   background-color: #f6f8fa; 
+}
+.user-info{
+    display:flex;
+    flex-direction:column;
+    padding:5rpx 0 20rpx 0;
+    align-items:center;
+    background:#f24f3b;
+}
+.userinfo-avatar{
+  display:-webkit-box;
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname{
+  color: white;
+}
+.nickcarid{
+  color: white;
+}
+.carid{
+  font-size: 15px;
+  color: white;
+}
+.certify{
+font-size: 10px;
+height: 20px;
+line-height:20px;
+width:70px;
+}
+.day_stat{
+    background-color: white;
+    margin-top:15px;
+/* box-shadow:#9a9797 10px 0px 10px; */
+padding-bottom:10px;
+
+}
+.bottomline{
+  height: 2px;
+  border-top:2rpx solid #f1f0f0;
+}
+.block{
+}
+.rightline{
+}
+.textday{
+font-size: 0.8em;
+    color: #999;
+    padding:5px;
+    padding-bottom:3px;
+
+}
+.fourimage{
+  display:flex;
+  margin-bottom:5px;
+margin-top:5px;
+
+}
+.menu_item{
+position:relative;
+margin:12px 0;
+flex:1;
+box-sizing:border-box;
+text-align:center;
+/* border-right:0.5px solid #dbdbdb; */
+}
+.menu_item wx-image{
+ font-size: 24rpx;
+  line-height: 24rpx;
+  height: 30px;
+  width: 30px;
+}
+.menu_item wx-text{
+ margin-top: 15rpx;
+    font-size: 32rpx;
+    line-height: 32rpx;
+    display: block;
+    color:#666666;
+}
+.block wx-text{
+  display: block;
+  color: #666666;
+  font-size: 31rpx;
+  text-align: center;
+  width: 100%;
+}
+.total{
+    font-size: 30rpx;
+    line-height: 30rpx;
+    color:#888;
+}
+.total text{
+    color:#333
+}
+.total text:last-child{
+    margin-left: 20rpx;
+}
+
+navigator{
+    position: relative;
+    margin-top: 30rpx;
+    padding:27rpx 60rpx 27rpx 90rpx;
+    height:34rpx;
+    line-height: 34rpx;
+    overflow: hidden;
+    background: #fff;
+    box-shadow:#d0d6c4 5px 5px 2px;
+
+}
+navigator:after{
+    position: absolute;
+	content: "";
+    top: 50%;
+    right: 30rpx;
+    width: 12rpx;
+    height: 12rpx;
+    border-top: 1rpx solid #999;
+    border-right: 1rpx solid #999;
+    transform:translate(0,-50%) rotate(45deg);
+}
+navigator:before{
+    position: absolute;
+    left:30rpx;
+    top:27rpx;
+    width: 30rpx;
+    height: 34rpx;
+    content:"";
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+.publish:before{
+    background-image: url("https://s.kcimg.cn/app/images/matching/posted.png")
+}
+.favorite:before{
+    background-image: url("https://s.kcimg.cn/app/images/matching/collected.png")
+}

@@ -1,0 +1,108 @@
+page{
+  /* background-color: #eaeaea; */
+}
+.user-info{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width: 60%;
+}
+.myrank1{
+  display:flex;
+  flex-direction: row;
+  padding:5rpx 0 20rpx 0;
+    align-items:center;
+    background:#f24f3b;
+}
+.userinfo-avatar{
+  display:-webkit-box;
+  width: 170rpx;
+  height: 170rpx;
+  margin: 0 20rpx;
+  border-radius: 50%;
+}
+.userinfo-nickname{
+  color: white;
+}
+.nickcarid{
+  color: white;
+}
+.container{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  padding-top: 0;
+}
+.head{
+text-align:center;
+}
+.textrank{
+  background-color:#f24f3b;
+  border-radius:10px;
+  color: white;
+}
+
+.myrank_text{
+/* margin-left:190px;
+height:50px;
+line-height:50px; */
+color: white;
+}
+.line3{
+display:-webkit-box;
+-webkit-box-orient:horizontal;
+text-align:center;
+background-color:rgba(200,200,200,0.2);
+margin-top:5px;
+/* box-shadow:#9a9797 10px 0px 10px; */
+/* padding:3px; */
+border-radius:10px;
+}
+
+
+.text1{
+-webkit-box-flex: 1;
+padding:2px 0;
+
+}
+.clientnum{
+-webkit-box-flex: 1
+}
+.block{
+display: -webkit-box;
+-webkit-box-orient: horizontal;
+text-align:center;
+background-color:white;
+/* margin-top:8px; */
+/* box-shadow:#9a9797 10px 0px 10px; */
+padding:3px;
+height: 40px;
+line-height: 40px;
+}
+.block1{ 
+/* margin-top:8px; */
+/* box-shadow:#9a9797 10px 0px 10px; */
+padding:3px;
+}
+.block_white{
+background-color: white;
+}
+.block_grey{
+background-color:rgba(200,200,200,0.2);
+}
+.no1{
+ background-color:#1296db;
+}
+.no2{
+background-color:#61a7cc;
+}
+.no3{
+background-color:#b3d3e4;
+}
+.ranknum{
+  width:33.33%;
+
+}
+.carid{
+  /* width:33.33%; */
+
+}
