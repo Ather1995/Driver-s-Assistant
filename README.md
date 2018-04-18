@@ -9,19 +9,19 @@
 
 ## 功能介绍
 ### uml图
-![overall](https://github.com/Ather1995/my/tree/master/display/uml.png?raw=true) <br>
+![uml](https://github.com/Ather1995/my/tree/master/display/uml.png?raw=true) <br>
 
 ### 思维导图
-![overall](https://github.com/Ather1995/my/tree/master/display/uml.png?raw=true) <br>
+![logic](https://github.com/Ather1995/my/tree/master/display/logic.png?raw=true) <br>
 
 ### 界面设计
-![overall](https://github.com/Ather1995/my/tree/master/display/main21.png?raw=true) <br>
-![overall](https://github.com/Ather1995/my/tree/master/display/mian21.png?raw=true) <br>
-![overall](https://github.com/Ather1995/my/tree/master/display/main2.png?raw=true) <br>
-![overall](https://github.com/Ather1995/my/tree/master/display/main31.png?raw=true) <br>
-![overall](https://github.com/Ather1995/my/tree/master/display/main3.png?raw=true) <br>
-![overall](https://github.com/Ather1995/my/tree/master/display/main411.png?raw=true) <br>
-![overall](https://github.com/Ather1995/my/tree/master/display/main41.png?raw=true) <br>
-![overall](https://github.com/Ather1995/my/tree/master/display/main4.png?raw=true) <br>
+![ui1](https://github.com/Ather1995/my/tree/master/display/main21.png?raw=true) <br>
+![ui2](https://github.com/Ather1995/my/tree/master/display/mian21.png?raw=true) <br>
+![ui3](https://github.com/Ather1995/my/tree/master/display/main2.png?raw=true) <br>
+![ui4](https://github.com/Ather1995/my/tree/master/display/main31.png?raw=true) <br>
+![ui5](https://github.com/Ather1995/my/tree/master/display/main3.png?raw=true) <br>
+![ui6](https://github.com/Ather1995/my/tree/master/display/main411.png?raw=true) <br>
+![ui7](https://github.com/Ather1995/my/tree/master/display/main41.png?raw=true) <br>
+![ui8](https://github.com/Ather1995/my/tree/master/display/main4.png?raw=true) <br>
 
 ## 技术要点
