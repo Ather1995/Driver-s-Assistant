@@ -10,19 +10,35 @@
 ## 功能介绍
 ### uml图
 ![uml](https://github.com/Ather1995/my/tree/master/display/uml.png?raw=true) <br>
-![wc](https://github.com/Ather1995/my/tree/master/display/wc.png?raw=true) <br>
 
 ### 思维导图
 ![logic](https://github.com/Ather1995/my/tree/master/display/logic.png?raw=true) <br>
 
 ### 界面设计
-![ui1](https://github.com/Ather1995/my/tree/master/display/main21.png?raw=true) <br>
-![ui2](https://github.com/Ather1995/my/tree/master/display/mian21.png?raw=true) <br>
-![ui3](https://github.com/Ather1995/my/tree/master/display/main2.png?raw=true) <br>
-![ui4](https://github.com/Ather1995/my/tree/master/display/main31.png?raw=true) <br>
-![ui5](https://github.com/Ather1995/my/tree/master/display/main3.png?raw=true) <br>
-![ui6](https://github.com/Ather1995/my/tree/master/display/main411.png?raw=true) <br>
-![ui7](https://github.com/Ather1995/my/tree/master/display/main41.png?raw=true) <br>
-![ui8](https://github.com/Ather1995/my/tree/master/display/main4.png?raw=true) <br>
+(1)路线(首页)  <br>
+1、客流量统计	 <br>
+自动计算所在定位点周边，客流量较大的区域点(定位点方圆 1000 米内日客 流量超过 4000 的区域点) <br>
+具体实现:点击“客流”控件，实时将定位信息传给云服务器，云服务器会在之前已处理好的，统计上海地区客流量超过4000的区域点的表中，遍历，找到定位点方圆1000米的点，返回坐标值，实现可视化。 <br>
 
+
+2、路径规划与天气 <br>
+实现:调用高德地图 api，嵌在 page 中，完成页面的切换跳转，实现功能，其中注意的是要在路径规划实现时，将搜索关键词的经纬度存在本地，再在路径规划页面上调用经纬度，实现可视化;图标浮在地图上用的是 control 控件，可实现跳 转。 <br>
+
+(2)附近 <br>
+1、常用兴趣点 <br>
+厕所、加油站、停车场 <br>
+实现:结合微信小程序语法，利用高德api，将关键词换成“厕所、加油站、停车场”，点击按钮，即可完成跳转。 <br>
+2、搜索历史 <br>
+实现:将每次的搜索记录异步存储在本地 wx.setStorageSync(KEY,DATA) 刷新页面，显示出来 wx.getStorageSync(KEY); <br>
+清除历史记录，只要将异步存储记录清除即可 wx.removeStorageSync(KEY)。 <br>
+(3)我的:主要完成数据处理统计模块 <br>
+1.实名认证 <br>
+实现:主要对车牌号进行认证，查询数据库中是否有该辆车的存在，若有则可成功认证，无，认证不成功;身份证和用户名由于真实信息难以获取，暂无法实现，后期可改善，考虑到车辆信息的隐私问题，故有必要对车主姓名身份实名认证。 <br>
+2.载客量 <br>
+统计总人数，及每个时间段载客人数 <br>
+实现:点击按钮，将carid传到云服务器，云服务器从已建成的载客量的表中查询该车信息，并将相关信息数据传到该 page，利用 charts.js，画出图标 <br>
+3.加油数 <br>
+统计一天的加油次数，及所有数据中加油 0 次，1 次，2 次及以上的车辆数量 实现原理同上 <br>
+4.载客榜 <br>
+统计载客数量前 20 的车辆车牌号，及载客数;该车辆的排名 实现原理同上 <br>
 ## 技术要点
