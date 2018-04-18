@@ -9,7 +9,7 @@
 
 ## 功能介绍
 ### uml图
-![uml](https://github.com/Ather1995/my/tree/master/display/uml.png?raw=true) <br>
+![uml](https://github.com/Ather1995/my/tree/master/display/uml.png) <br>
 
 ### 思维导图
 ![logic](https://github.com/Ather1995/my/tree/master/display/logic.png?raw=true) <br>
